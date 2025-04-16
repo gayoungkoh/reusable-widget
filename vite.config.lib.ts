@@ -15,13 +15,22 @@ export default defineConfig({
     "process.env.NODE_ENV": JSON.stringify("production"),
   },
   build: {
+    outDir: "dist/lib",
     emptyOutDir: false,
     lib: {
       entry: resolve(__dirname, "src/components/siteOverviewChartComponent.ts"),
       name: "SiteOverviewChart",
-      fileName: (format) => `js/site-overview-chart.${format}.js`,
+      fileName: (format) => `site-overview-chart.${format}.js`,
       formats: ["es", "umd"],
     },
+    rollupOptions: {
+      external: ["react", "react-dom"],
+      output: {
+        globals: {
+          react: "React",
+          "react-dom": "ReactDOM",
+        },
+      },
+    },
   },
-  base: "/reusable-widget/",
 });

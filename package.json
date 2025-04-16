@@ -11,8 +11,8 @@
     "build:lib": "tsc -b && vite build --config vite.config.lib.ts",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "pnpm run build",
-    "deploy": "gh-pages -d dist"
+    "predeploy": "pnpm run build:web",
+    "deploy": "gh-pages -d dist/web"
   },
   "dependencies": {
     "@r2wc/react-to-web-component": "^2.0.4",
