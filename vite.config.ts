@@ -13,5 +13,6 @@ export default defineConfig({
   base: "/reusable-widget/",
   build: {
     outDir: "dist",
+    emptyOutDir: true,
   },
 });

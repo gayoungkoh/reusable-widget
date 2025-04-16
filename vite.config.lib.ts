@@ -16,7 +16,7 @@ export default defineConfig({
   },
   build: {
     outDir: "dist/lib",
-    emptyOutDir: false,
+    emptyOutDir: true,
     lib: {
       entry: resolve(__dirname, "src/components/siteOverviewChartComponent.ts"),
       name: "SiteOverviewChart",
