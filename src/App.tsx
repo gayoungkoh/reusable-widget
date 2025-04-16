@@ -1,3 +1,5 @@
+import { SiteOverviewChartWrapper } from "@/components/SiteOverviewChart";
+
 export const App = () => {
-  return null;
+  return <SiteOverviewChartWrapper />;
 };
