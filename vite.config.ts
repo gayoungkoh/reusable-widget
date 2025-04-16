@@ -12,7 +12,6 @@ export default defineConfig({
   },
   base: "/reusable-widget/",
   build: {
-    outDir: "dist/web",
-    emptyOutDir: false,
+    outDir: "dist",
   },
 });
