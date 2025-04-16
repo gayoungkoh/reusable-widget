@@ -1,11 +1,11 @@
 import r2wc from "@r2wc/react-to-web-component";
 import { SiteOverviewChartWrapper } from "@/components/SiteOverviewChart";
 
-const SiteOverviewChartComponent = r2wc(SiteOverviewChartWrapper, {
+const siteOverviewChartComponent = r2wc(SiteOverviewChartWrapper, {
   shadow: "closed",
   props: {
     siteId: "number",
   },
 });
 
-customElements.define("site-overview-chart", SiteOverviewChartComponent);
+customElements.define("site-overview-chart", siteOverviewChartComponent);
