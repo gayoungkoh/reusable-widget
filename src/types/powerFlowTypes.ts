@@ -1,7 +1,7 @@
 export type ValueType<T> = T[keyof T];
 
 export type PowerFlowProps = {
-  siteId: string;
+  "site-id": string;
 };
 
 export const NETWORK_TYPE = {

@@ -6,7 +6,7 @@ export const App = () => {
     <>
       <SiteOverviewChartWrapper />
       <div style={{ width: "300px", height: "200px" }}>
-        <PowerFlowWrapper siteId="123" />
+        <PowerFlowWrapper site-id="123" />
       </div>
     </>
   );

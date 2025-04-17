@@ -3,7 +3,7 @@ import { PowerFlowWrapper } from "@/components/powerFlow/PowerFlow";
 
 const powerFlowComponent = r2wc(PowerFlowWrapper, {
   props: {
-    siteId: "string",
+    "site-id": "string",
   },
 });
 

@@ -12,7 +12,7 @@ import "@/components/powerFlow/powerFlow.css";
 import { FlowLayer } from "@/components/powerFlow/FlowLayer";
 const queryClient = new QueryClient();
 
-export const PowerFlow = ({ siteId }: PowerFlowProps) => {
+export const PowerFlow = ({ "site-id": siteId }: PowerFlowProps) => {
   const { isLoading, data = null } = useQuery<PowerFlowData>({
     queryKey: ["powerFlow", siteId],
     queryFn: () => fetchPowerFlow(siteId),
@@ -44,10 +44,10 @@ export const PowerFlow = ({ siteId }: PowerFlowProps) => {
   );
 };
 
-export const PowerFlowWrapper = ({ siteId }: PowerFlowProps) => {
+export const PowerFlowWrapper = ({ "site-id": siteId }: PowerFlowProps) => {
   return (
     <QueryClientProvider client={queryClient}>
-      <PowerFlow siteId={siteId} />
+      <PowerFlow site-id={siteId} />
     </QueryClientProvider>
   );
 };
