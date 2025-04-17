@@ -1,7 +1,8 @@
-import { PieChartProps } from "@/types/siteOverviewTypes";
+import { PieChartProps } from "@/types/chartTypes";
 import { getChartOptions } from "@/utils/chartHelper";
 import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
+import "highcharts/modules/accessibility";
 
 export const PieChart = ({ series }: PieChartProps) => {
   const chartOptions = getChartOptions(series);

@@ -1,5 +1,6 @@
 import { CHART_COLORS } from "@/constants/color";
-import { ChartSeries, SiteOverviewChartData } from "@/types/siteOverviewTypes";
+import { ChartSeries } from "@/types/chartTypes";
+import { SiteOverviewChartData } from "@/types/siteOverviewChartTypes";
 import { Options } from "highcharts";
 
 // Chart configuration constants

@@ -1,6 +1,6 @@
 {
   "name": "@gayoungkoh/reusable-widget",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "type": "module",
   "files": [
     "dist"
@@ -23,6 +23,7 @@
     "@types/node": "^22.14.1",
     "highcharts": "^12.2.0",
     "highcharts-react-official": "^3.2.1",
+    "lottie-react": "^2.4.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

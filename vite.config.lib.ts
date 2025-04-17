@@ -19,10 +19,9 @@ export default defineConfig({
     outDir: "dist/lib",
     emptyOutDir: true,
     lib: {
-      entry: resolve(__dirname, "src/components/siteOverviewChartComponent.ts"),
-      name: "SiteOverviewChart",
-      fileName: (format) => `site-overview-chart.${format}.js`,
+      entry: resolve(__dirname, "src/components/index.ts"),
       formats: ["es", "umd"],
+      name: "ReusableWidget",
     },
     rollupOptions: {
       external: ["react", "react-dom", "react-dom/client"],
@@ -34,5 +33,6 @@ export default defineConfig({
         },
       },
     },
+    assetsInlineLimit: 100000000,
   },
 });

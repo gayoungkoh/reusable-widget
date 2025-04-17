@@ -14,13 +14,3 @@ export type SiteOverviewChartData = {
   onRunCnt: number;
   incompleteCustomerCount: number;
 };
-
-export type ChartSeries = {
-  name: string;
-  y: number;
-  color: string;
-};
-
-export type PieChartProps = {
-  series: ChartSeries[];
-};

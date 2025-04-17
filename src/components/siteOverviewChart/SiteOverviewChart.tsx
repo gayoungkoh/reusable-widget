@@ -1,10 +1,10 @@
 import { fetchSiteOverviewChart } from "@/apis/service";
-import { SiteOverviewChartData } from "@/types/siteOverviewTypes";
+import { SiteOverviewChartData } from "@/types/siteOverviewChartTypes";
 import { useQuery } from "@tanstack/react-query";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { transformSiteOverviewDataToChartSeriesList } from "@/utils/chartHelper";
 import { PieChart } from "@/components/PieChart";
-import "@/components/siteOverviewChart.css";
+import "@/components/siteOverviewChart/siteOverviewChart.css";
 
 const queryClient = new QueryClient();
 
