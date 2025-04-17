@@ -1,8 +1,13 @@
 {
-  "name": "reusable-widget",
-  "private": true,
-  "version": "1.0.0",
+  "name": "@gayoungkoh/reusable-widget",
+  "version": "0.1.0",
   "type": "module",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "homepage": "https://gayoungkoh.github.io/reusable-widget",
   "scripts": {
     "dev": "vite",
@@ -37,6 +42,7 @@
     "typescript": "~5.7.2",
     "typescript-eslint": "^8.24.1",
     "vite": "^6.2.0",
-    "vite-plugin-css-injected-by-js": "^3.5.2"
+    "vite-plugin-css-injected-by-js": "^3.5.2",
+    "vite-plugin-dts": "^4.5.3"
   }
 }
