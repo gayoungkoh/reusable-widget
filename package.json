@@ -1,6 +1,6 @@
 {
   "name": "@gayoungkoh/reusable-widget",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "type": "module",
   "files": [
     "dist"
@@ -26,13 +26,13 @@
     "@types/node": "^22.14.1",
     "highcharts": "^12.2.0",
     "highcharts-react-official": "^3.2.1",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
-    "@types/react": "^19.0.10",
-    "@types/react-dom": "^19.0.4",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
     "@vitejs/plugin-react": "^4.3.4",
     "eslint": "^9.21.0",
     "eslint-plugin-react-hooks": "^5.1.0",
