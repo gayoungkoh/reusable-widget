@@ -1,6 +1,6 @@
 {
   "name": "@gayoungkoh/reusable-widget",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "type": "module",
   "files": [
     "dist"
@@ -8,16 +8,13 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
-  "homepage": "https://gayoungkoh.github.io/reusable-widget",
   "scripts": {
     "dev": "vite",
     "build": "pnpm run build:web && pnpm run build:lib",
     "build:web": "tsc -b && vite build",
     "build:lib": "tsc -b && vite build --config vite.config.lib.ts",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "predeploy": "pnpm run build:web",
-    "deploy": "gh-pages -d dist/web"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@r2wc/react-to-web-component": "^2.0.4",

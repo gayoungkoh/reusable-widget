@@ -35,5 +35,4 @@ export default defineConfig({
       },
     },
   },
-  base: "/reusable-widget/",
 });
