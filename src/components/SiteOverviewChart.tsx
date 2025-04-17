@@ -4,6 +4,7 @@ import { useQuery } from "@tanstack/react-query";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { transformSiteOverviewDataToChartSeriesList } from "@/utils/chartHelper";
 import { PieChart } from "@/components/PieChart";
+import "@/components/siteOverviewChart.css";
 
 const queryClient = new QueryClient();
 
