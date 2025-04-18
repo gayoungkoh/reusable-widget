@@ -4,7 +4,7 @@ import { useQuery } from "@tanstack/react-query";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { transformSiteOverviewDataToChartSeriesList } from "@/utils/chartHelper";
 import { PieChart } from "@/components/PieChart";
-import "@/components/siteOverviewChart/siteOverviewChart.css";
+import styles from "@/components/siteOverviewChart/SiteOverviewChart.module.css";
 
 const queryClient = new QueryClient();
 
@@ -26,13 +26,13 @@ export const SiteOverviewChart = () => {
     transformSiteOverviewDataToChartSeriesList(data);
 
   return (
-    <div className="chart-container">
-      <div className="chart-wrapper">
-        <h3 className="chart-title">Online Sites</h3>
+    <div className={styles.chartContainer}>
+      <div className={styles.chartWrapper}>
+        <h3 className={styles.chartTitle}>Online Sites</h3>
         <PieChart series={onlineSeriesList} />
       </div>
-      <div className="chart-wrapper">
-        <h3 className="chart-title">Offline Sites</h3>
+      <div className={styles.chartWrapper}>
+        <h3 className={styles.chartTitle}>Offline Sites</h3>
         <PieChart series={offlineSeriesList} />
       </div>
     </div>

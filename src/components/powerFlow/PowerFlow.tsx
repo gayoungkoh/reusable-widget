@@ -8,8 +8,9 @@ import {
 import { fetchPowerFlow } from "@/apis/service";
 import { PipeLayer } from "@/components/powerFlow/PipeLayer";
 import { ProductLayer } from "@/components/powerFlow/ProductLayer";
-import "@/components/powerFlow/powerFlow.css";
 import { FlowLayer } from "@/components/powerFlow/FlowLayer";
+import styles from "@/components/powerFlow/PowerFlow.module.css";
+
 const queryClient = new QueryClient();
 
 export const PowerFlow = ({ "site-id": siteId }: PowerFlowProps) => {
@@ -27,17 +28,17 @@ export const PowerFlow = ({ "site-id": siteId }: PowerFlowProps) => {
   }
 
   return (
-    <div className="power-flow-container">
-      <div className="layer-container">
+    <div className={styles.powerFlowContainer}>
+      <div className={styles.layerContainer}>
         <HomeLayer />
       </div>
-      <div className="layer-container">
+      <div className={styles.layerContainer}>
         <PipeLayer />
       </div>
-      <div className="layer-container">
+      <div className={styles.layerContainer}>
         <FlowLayer />
       </div>
-      <div className="layer-container">
+      <div className={styles.layerContainer}>
         <ProductLayer />
       </div>
     </div>

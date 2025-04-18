@@ -3,12 +3,13 @@ import { getChartOptions } from "@/utils/chartHelper";
 import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
 import "highcharts/modules/accessibility";
+import styles from "@/components/PieChart.module.css";
 
 export const PieChart = ({ series }: PieChartProps) => {
   const chartOptions = getChartOptions(series);
 
   return (
-    <div className="pie-chart">
+    <div className={styles.pieChart}>
       <HighchartsReact
         highcharts={Highcharts}
         options={{

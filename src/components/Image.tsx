@@ -1,3 +1,5 @@
+import styles from "@/components/Image.module.css";
+
 const images = import.meta.glob("/src/assets/**/*.{png,svg}", { eager: true });
 
 const getImageByName = (name: string) => {
@@ -9,5 +11,5 @@ const getImageByName = (name: string) => {
 export const Image = ({ imageName }: { imageName: string }) => {
   const imageSrc = getImageByName(imageName);
 
-  return <img src={imageSrc} alt={imageName} />;
+  return <img src={imageSrc} alt={imageName} className={styles.image} />;
 };
