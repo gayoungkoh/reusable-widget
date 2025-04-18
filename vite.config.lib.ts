@@ -5,11 +5,6 @@ import { resolve } from "path";
 import cssInjectedByJsPlugin from "vite-plugin-css-injected-by-js";
 import dts from "vite-plugin-dts";
 
-const getDate = () => {
-  const date = new Date();
-  return date.toISOString().split("T")[0].replace(/-/g, "");
-};
-
 export default defineConfig({
   plugins: [react(), cssInjectedByJsPlugin(), dts({ include: "src" })],
   resolve: {
@@ -33,7 +28,6 @@ export default defineConfig({
       entry: resolve(__dirname, "src/components/index.ts"),
       formats: ["es", "umd"],
       name: "ReusableWidget",
-      fileName: (format) => `reusable-widget.${format}.js?v=${getDate()}`,
     },
     rollupOptions: {
       //external: ["react", "react-dom", "react-dom/client"],
