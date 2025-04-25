@@ -23,13 +23,15 @@ export default defineConfig({
   },
   build: {
     outDir: "dist/lib",
-    emptyOutDir: true,
+    emptyOutDir: false,
     lib: {
       entry: resolve(__dirname, "src/components/index.ts"),
       formats: ["es", "umd"],
+      fileName: (format) => `reusable-widget.external.${format}.js`,
       name: "ReusableWidget",
     },
     rollupOptions: {
+      external: ["react", "react-dom", "react-dom/client"],
       output: {
         globals: {
           react: "React",
